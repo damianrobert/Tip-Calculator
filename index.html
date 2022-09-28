@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Tip Calculator</title>
   </head>
   <body>
-    <main>
+    <main id="container">
       <h1>JavaScript Tip Calculator</h1>
 
       <section>
@@ -23,7 +27,7 @@
             <label for="">Select Tip</label>
             <span id="tipPercent">0%</span>
           </div>
-          <input type="range" vlaue="0" id="tipInput" />
+          <input class="range" type="range" value="0" id="tipInput" />
         </div>
         <div class="space-between">
           <span>Tip</span>
@@ -39,10 +43,17 @@
       <section>
         <div>
           <div class="space-between">
-            <label for="">Split</label>
-            <span id="splitValue">1 person</span>
+            <label for="">Split person</label>
+            <span id="splitValue"></span>
           </div>
-          <input type="range" min="1" max="10" id="" />
+          <input
+            class="range"
+            type="range"
+            value="0"
+            min="1"
+            max="10"
+            id="splitInput"
+          />
         </div>
         <div class="space-between">
           <span>Bill each</span>
